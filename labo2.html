@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Curriculum</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <article>
+            <h1>Curriculum vitae</h1>
+            <form action="labo2.html" method="GET">
+                <section style="display:inline-block">
+                    <fieldset style="display:inline-block">
+                        <legend><strong>Personal data</strong></legend>
+                        <section>
+                            <label for="dui">DUI: </label>
+                            <input type="tel" id="dui" name="dui" required pattern="[0-9]{8}-[0-9]{1}">
+                            <label for="fn">First Name: </label>
+                            <input type="text" id="fn" name="fn" required>
+                            <label for="ln">Last Name: </label>
+                            <input type="text" id="ln" name="ln" required>
+                            <label for="gender">Gender </label>
+                            <input type="radio" name="gender" required>M
+                            <input type="radio" name="gender" required>F
+                        </section><br>
+                        <section>
+                            <label for="connum">Contact number: </label>
+                            <input type="tel" id="connum" name="connum" required placeholder="8 digits" pattern="[0-9]{4}-[0-9]{4}">
+                            <label for="fecha">Birthdate: </label>
+                            <input type="date" id="fecha" name="fecha" required min="2000-01-01" max="2018-12-31">
+                            <select>
+                                <option>Single</option>
+                                <option>Married</option>
+                            </select>
+                            <label for="img">Image: </label>
+                            <input type="file" id="img" name="img" required> 
+                        </section>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Work experience</strong></legend>
+                        <textarea rows="10" cols="107" required>Experience </textarea >
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><strong>Academic training</strong></legend>
+                        <textarea rows="10" cols="107" required>Academic training </textarea >
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend><strong>Further training</strong></legend>
+
+                        <fieldset>
+                            <legend><strong>Programming languages</strong></legend>
+                            <label for="check">Select at least 1: </label>
+                            <input type="checkbox" name="check[]" name="check" id="check"> Java
+                            <input type="checkbox" name="check[]" name="check" id="check"> C#
+                            <input type="checkbox" name="check[]" name="check" id="check"> C++
+                            <input type="checkbox" name="check[]" name="check" id="check"> Python
+                            <input type="checkbox" name="check[]" name="check" id="check"> Ruby
+                        </fieldset>
+
+                        <fieldset>
+                            <legend><strong>Web technologies</strong></legend>
+                            <label for="check2">Select at least 1: </label>
+                            <input type="checkbox" name="check[]" name="check2" id="check2"> Java
+                            <input type="checkbox" name="check[]" name="check2" id="check2"> C#
+                            <input type="checkbox" name="check[]" name="check2" id="check2"> C++
+                            <input type="checkbox" name="check[]" name="check2" id="check2"> Python
+                            <input type="checkbox" name="check[]" name="check2" id="check2"> Ruby
+                        </fieldset>
+
+                    </fieldset>
+
+                </section><br>
+                <section>
+                    <input type="submit" value="Send">
+                </section>
+            </form>
+
+        </article>
+    </body>
+</html>
